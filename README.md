@@ -3,7 +3,7 @@ Ever wanted to automatically take a webpage full of videos and store the data in
 
 Probably not. But here it is anyway!
 
-##Dependencies
+## Dependencies
 - python3
 - psycopg2
 - CockroachDB
