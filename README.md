@@ -3,6 +3,8 @@ Ever wanted to automatically take a webpage full of videos and store the data in
 
 Probably not. But here it is anyway!
 
+Unfortunately only supports YouTube at the current moment.
+
 ## Dependencies
 - python3
 - psycopg2
