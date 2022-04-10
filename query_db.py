@@ -33,10 +33,10 @@ def print_query(query_rows):
     name_size = 30
     c_name_size = 30
     url_size = 50
-    formatted = "{:<"+str(name_size)+"}|{:<"+str(c_name_size)+"}|{:<"+str(url_size)+"}|{}"
+    formatted = "{:<"+str(name_size)+"}|{:<"+str(c_name_size)+"}|{:<"+str(url_size)+"}|{}" #formatting the column widths
     columns = ("name", "creator_name", "url", "mirror")
-    print(formatted.format(columns[0], columns[1], columns[2], columns[3]))
-    for e1, e2, e3, e4 in query_rows:
+    print(formatted.format(columns[0], columns[1], columns[2], columns[3])) #printing column titles
+    for e1, e2, e3, e4 in query_rows: #this mess truncates strings and appends ".." if too long for the column
         e1 = e1[:(name_size-2)] + (e1[(name_size-2):] and '..')
         e2 = e2[:(c_name_size-2)] + (e2[(c_name_size-2):] and '..')
         e3 = e3[:(url_size-2)] + (e3[(url_size-2):] and '..')
